@@ -36,7 +36,7 @@ const onSubmit = async (data)=>{
   console.log(data);
   
   
-  await axios.post('http://localhost:3001/login',data)
+  await axios.post('https://vercel.com/binhan1610/be-nodejs/login',data)
   .then(response => {
     console.log(response.data)
       if(response.data)

@@ -19,7 +19,7 @@ function Signup() {
       username:data.username,
       password:data.password
     }
-    axios.post(`http://localhost:3001/register`,user)
+    axios.post(`https://vercel.com/binhan1610/be-nodejs/register`,user)
       }
     return (
     <div>      
