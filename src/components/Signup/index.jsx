@@ -19,7 +19,13 @@ function Signup() {
       username:data.username,
       password:data.password
     }
-    axios.post(`https://vercel.com/binhan1610/be-nodejs/register`,user)
+    axios.post(`https://vercel.com/binhan1610/be-nodejs/register`, user)
+    .then(response => {
+      console.log(response.data)
+    })
+    .catch(error => {
+      console.error(error)
+    })
       }
     return (
     <div>      
